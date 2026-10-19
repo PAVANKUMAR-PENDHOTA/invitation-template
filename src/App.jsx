@@ -82,7 +82,7 @@ export default function App() {
   return (
     <Box>
       {/* Replace with your own song, e.g. /audio/song.mp3 */}
-      <audio ref={audioRef} src="/audio/ambient.wav" loop preload="auto" />
+      <audio ref={audioRef} src="/audio/ambient.mp3" loop preload="auto" />
 
       <AnimatePresence>
         {phase !== 'open' && <Cover key="cover" opening={phase === 'opening'} onOpen={handleOpen} />}
