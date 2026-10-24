@@ -3,23 +3,23 @@
 //  (Details below are taken from your recorded page. Change freely.)
 // ============================================================
 export const invitation = {
-  hashtag: '#RoSe',
-  saveTheDate: 'Save the date - 7th September',
+  hashtag: '#Pravysh',
+  saveTheDate: 'Save the date - 1st November 2026',
 
-  groomShort: 'Dr.Rohith',
-  brideShort: 'Dr.Seema',
+  groomShort: 'Mr.Prashanth ',
+  brideShort: 'Ms.Vyshnavi',
 
   groom: {
-    name: 'Rohith Raj',
+    name: 'Uppula Prashanth',
     role: 'GROOM',
-    parents: ['Rajender', 'Shobha Rani'],
-    place: 'Sagara colony KU, Hanamkonda',
+    parents: ['Ramesh(Late)', 'Kalavathi'],
+    place: 'SRR Thota, Warangal',
   },
   bride: {
-    name: 'Seema Preetham',
+    name: 'Sirikonda Vyshnavi',
     role: 'BRIDE',
-    parents: ['Surya Narayana', 'Sumangali'],
-    place: 'Gopalpur, Hanamkonda',
+    parents: ['Kanakaraju', 'Rekhani'],
+    place: 'Old bus depo, Hanamkonda',
   },
 
   ceremonyTitle: 'Engagement Ceremony',
@@ -32,7 +32,7 @@ export const invitation = {
   ],
 
   // month is 1-12
-  date: { year: 2026, month: 9, day: 7 },
+  date: { year: 2026, month: 11, day: 1 },
   time: '09:15',
   partyTitle: 'Engagement Party Info',
 
@@ -40,7 +40,7 @@ export const invitation = {
     title: 'Engagement Party Venue',
     name: 'Shubhamasthu Convention Hall',
     address:
-      'Shubhamasthu Convention Hall, near Svs College, beside Radhika Hospital, Bheemaram, Hanamkonda, Telangana 506015',
+      'Aishwarya convention hall,beside dominos Pizza, forest Office near Sri Sai Colony, Revenue Colony, Subedari, Hanamkonda, Telangana 506001',
   },
 
   dressCode: {
@@ -49,30 +49,25 @@ export const invitation = {
   },
 
   schedule: [
-    { time: '09:00', text: 'Welcome', icon: 'bell' },
-    { time: '11:00', text: 'starters and drinks', icon: 'music' },
+    { time: '10:00', text: 'Welcome', icon: 'bell' },
     { time: '12:30', text: 'Rings exchange', icon: 'rings' },
     { time: '13:00', text: 'Main Course', icon: 'food' },
+    { time: '17:00', text: 'Followed by Sangeet Event', icon: 'music' },
   ],
 
   // Put your real photos in /public/images/photos and list them here
   gallery: [
-    '/images/photos/photo-1.svg',
-    '/images/photos/photo-2.svg',
-    '/images/photos/photo-3.svg',
-    '/images/photos/photo-4.svg',
+    '/images/photos/photo-1.jpg',
+    '/images/photos/photo-2.jpg',
+    '/images/photos/photo-3.jpg',
+    '/images/photos/photo-4.jpg',
+    '/images/photos/photo-5.jpg',
+    '/images/photos/photo-6.jpeg',
   ],
 
   closing: 'Your presence would be the greatest gift we could receive!',
-  footerCredit: '© made with React & Material UI',
+  footerCredit: '© made with 💜 by Prashanth & Vyshnavi',
 
   // WhatsApp number (country code, digits only) to receive RSVPs. Leave '' to disable.
   whatsapp: '',
-
-  // sample guest wishes shown first in the guestbook
-  seedWishes: [
-    { name: 'Anil', message: 'Hearty congratulations to you both! 🎉', at: '2026-09-06T19:23:00' },
-    { name: 'Priya', message: 'Wishing you a lifetime of love and happiness. #RoSe', at: '2026-09-05T12:37:00' },
-    { name: 'Kiran', message: 'Congratulations! Looking forward to the celebration.', at: '2026-09-04T10:19:00' },
-  ],
 };

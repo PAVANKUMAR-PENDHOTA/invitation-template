@@ -11,6 +11,8 @@ export default function Floral({ name, flip = false, flipY = false, sx }) {
       alt=""
       aria-hidden
       draggable={false}
+      loading="lazy"
+      decoding="async"
       sx={{
         position: 'absolute',
         pointerEvents: 'none',

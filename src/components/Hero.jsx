@@ -48,7 +48,7 @@ export default function Hero({ play }) {
           <Typography
             sx={{
               position: 'relative', zIndex: 2, pt: '9%', fontFamily: '"Bodoni Moda", "Playfair Display", serif', fontWeight: 400,
-              fontSize: { xs: 40, sm: 46 }, lineHeight: 1.08, letterSpacing: 1, color: '#6f65a3', textTransform: 'uppercase',
+              fontSize: { xs: 29, sm: 35 }, lineHeight: 2, letterSpacing: 1, color: '#6f65a3', textTransform: 'uppercase',
               textShadow: '0 0 8px #f6f5f8, 0 0 14px #f6f5f8',
             }}
           >

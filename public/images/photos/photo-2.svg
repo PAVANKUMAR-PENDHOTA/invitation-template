@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760">
-<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9d0ee"/><stop offset="1" stop-color="#7b6bb0"/></linearGradient></defs>
-<rect width="600" height="760" fill="url(#g)"/>
-<circle cx="230" cy="300" r="62" fill="#fff" opacity=".85"/><path d="M110 640 Q120 430 230 420 Q340 430 350 640Z" fill="#fff" opacity=".85"/>
-<circle cx="390" cy="320" r="56" fill="#fff" opacity=".7"/><path d="M290 640 Q300 450 390 440 Q480 450 490 640Z" fill="#fff" opacity=".7"/>
-<text x="300" y="705" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#fff" opacity=".95">Add your photo 2</text></svg>

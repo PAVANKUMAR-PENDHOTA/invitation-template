@@ -65,7 +65,7 @@ export default function Cover({ opening, onOpen }) {
 
           <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 1, my: 2, color: PURPLE_SOFT }}>
             <Box sx={{ width: 40, height: '1px', bgcolor: '#cfcbe0' }} />
-            <Typography sx={{ fontSize: 12 }}>❦</Typography>
+            <Typography sx={{ fontSize: 12}}>💜</Typography>
             <Box sx={{ width: 40, height: '1px', bgcolor: '#cfcbe0' }} />
           </Box>
 

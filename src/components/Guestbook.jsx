@@ -2,10 +2,9 @@ import { useEffect, useState } from 'react';
 import { Box, Button, ClickAwayListener, IconButton, Paper, TextField, Typography } from '@mui/material';
 import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
 import Reveal from './Reveal';
-import { invitation as inv } from '../data/invitation';
 import { PURPLE, PURPLE_SOFT } from '../theme';
 
-const KEY = 'invitation-guestbook-v1';
+const KEY = 'invitation-guestbook-v2';
 const EMOJIS = ['❤️', '🎉', '🥰', '🙏', '🌹', '💐', '✨', '😍', '👏', '🥂', '💜', '😊'];
 
 function load() {
@@ -13,7 +12,7 @@ function load() {
     const raw = JSON.parse(localStorage.getItem(KEY) || 'null');
     if (Array.isArray(raw)) return raw;
   } catch { /* ignore */ }
-  return inv.seedWishes;
+  return [];
 }
 
 export default function Guestbook() {

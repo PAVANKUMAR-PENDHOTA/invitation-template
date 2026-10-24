@@ -15,7 +15,9 @@ import FloatingButtons from './components/FloatingButtons';
 import useAutoScroll from './hooks/useAutoScroll';
 
 // seconds the envelope intro needs before the page starts gliding (see index.css)
-const INTRO_MS = 6000;
+const INTRO_MS = 5000;
+const MUSIC_START = 329;
+const MUSIC_END = 383;
 
 export default function App() {
   const audioRef = useRef(null);
@@ -72,6 +74,18 @@ export default function App() {
     setTimeout(() => setPhase('open'), 1300);
   };
 
+  const handleAudioMetadata = () => {
+    const a = audioRef.current;
+    if (a && (a.currentTime < MUSIC_START || a.currentTime >= MUSIC_END)) {
+      a.currentTime = MUSIC_START;
+    }
+  };
+
+  const handleAudioTimeUpdate = () => {
+    const a = audioRef.current;
+    if (a && a.currentTime >= MUSIC_END) a.currentTime = MUSIC_START;
+  };
+
   const toggleMusic = () => {
     const a = audioRef.current;
     if (!a) return;
@@ -81,8 +95,18 @@ export default function App() {
 
   return (
     <Box>
-      {/* Replace with your own song, e.g. /audio/song.mp3 */}
-      <audio ref={audioRef} src="/audio/ambient.mp3" loop preload="auto" />
+      <audio
+        ref={audioRef}
+        style={{ display: 'none' }}
+        data-video-audio="true"
+        data-music-track-id="yt-e1b9ad9b-cca"
+        data-music-start={MUSIC_START}
+        data-music-end={MUSIC_END}
+        preload="metadata"
+        src="https://cdn.chungdoi.com/music/yt-e1b9ad9b-cca.mp3"
+        onLoadedMetadata={handleAudioMetadata}
+        onTimeUpdate={handleAudioTimeUpdate}
+      />
 
       <AnimatePresence>
         {phase !== 'open' && <Cover key="cover" opening={phase === 'opening'} onOpen={handleOpen} />}

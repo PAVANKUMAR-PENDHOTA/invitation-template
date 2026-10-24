@@ -34,10 +34,10 @@ export default function CeremonyCard() {
             ))}
           </Box>
 
-          <Typography sx={{ fontFamily: '"Bodoni Moda", "Playfair Display", serif', fontSize: { xs: 30, sm: 34 }, lineHeight: 1.1 }}>{inv.groom.name}</Typography>
+          <Typography sx={{ fontFamily: '"Bodoni Moda", "Playfair Display", serif', fontSize: { xs: 28, sm: 30 }, lineHeight: 1.1 }}>{inv.groom.name}</Typography>
           <Typography sx={{ fontSize: 9, letterSpacing: 2, opacity: 0.7, my: 1 }}>{inv.groom.role}</Typography>
           <Typography sx={{ fontFamily: '"Bodoni Moda", serif', fontStyle: 'italic', fontSize: 30, lineHeight: 1 }}>&amp;</Typography>
-          <Typography sx={{ fontFamily: '"Bodoni Moda", "Playfair Display", serif', fontSize: { xs: 30, sm: 34 }, lineHeight: 1.1, mt: 1 }}>{inv.bride.name}</Typography>
+          <Typography sx={{ fontFamily: '"Bodoni Moda", "Playfair Display", serif', fontSize: { xs: 28, sm: 30 }, lineHeight: 1.1, mt: 1 }}>{inv.bride.name}</Typography>
           <Typography sx={{ fontSize: 9, letterSpacing: 2, opacity: 0.7, mt: 1 }}>{inv.bride.role}</Typography>
 
           <Floral name="corner_br" sx={{ right: '-17%', bottom: '-9%', width: '40%' }} />

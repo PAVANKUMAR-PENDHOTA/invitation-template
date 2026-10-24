@@ -28,14 +28,14 @@ export default function PhotoGallery() {
           centeredSlides
           slidesPerView="auto"
           rewind
-          autoplay={{ delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: true }}
+          autoplay={{ delay: 2800, disableOnInteraction: false, pauseOnMouseEnter: true }}
           coverflowEffect={{ rotate: 28, stretch: 0, depth: 110, modifier: 1, slideShadows: false }}
           pagination={{ clickable: true }}
           navigation
         >
           {inv.gallery.map((src, i) => (
             <SwiperSlide key={src}>
-              <img src={src} alt={`Gallery photo ${i + 1}`} loading="lazy" draggable={false} />
+              <img src={src} alt={`Gallery photo ${i + 1}`} loading="lazy" decoding="async" draggable={false} />
             </SwiperSlide>
           ))}
         </Swiper>

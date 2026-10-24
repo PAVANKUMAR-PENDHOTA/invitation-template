@@ -30,13 +30,13 @@ This project is intended as a portfolio/profile landing page that can be customi
 
 ## Getting Started
 
-1. Install dependencies:
+Use Node.js 18 or newer. Install the locked dependencies:
 
 ```bash
-npm install
+npm ci
 ```
 
-2. Start the development server:
+Start the development server:
 
 ```bash
 npm run dev
@@ -48,17 +48,22 @@ The app will typically run at:
 http://localhost:5173
 ```
 
-3. Build for production:
+Create and preview the production build:
 
 ```bash
 npm run build
-```
-
-4. Preview the production build locally:
-
-```bash
 npm run preview
 ```
+
+Vite writes the production-ready static site to `dist/`.
+
+## Deploying to Vercel
+
+1. Import this repository in Vercel and keep the detected Vite framework preset.
+2. Use `npm ci` as the install command and `npm run build` as the build command.
+3. Set the output directory to `dist`, then deploy.
+
+No server-side runtime or environment variables are required for the current frontend. Guestbook entries and RSVP drafts are stored in each visitor's browser; they are not shared with other visitors or devices. The background music is served from an external audio host and requires an internet connection.
 
 ## Project Structure
 
