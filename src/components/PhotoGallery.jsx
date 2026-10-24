@@ -28,7 +28,7 @@ export default function PhotoGallery() {
           centeredSlides
           slidesPerView="auto"
           rewind
-          autoplay={{ delay: 2800, disableOnInteraction: false, pauseOnMouseEnter: true }}
+          autoplay={{ delay: 1200, disableOnInteraction: false, pauseOnMouseEnter: true }}
           coverflowEffect={{ rotate: 28, stretch: 0, depth: 110, modifier: 1, slideShadows: false }}
           pagination={{ clickable: true }}
           navigation

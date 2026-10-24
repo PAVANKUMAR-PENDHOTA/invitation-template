@@ -38,7 +38,7 @@ export const invitation = {
 
   venue: {
     title: 'Engagement Party Venue',
-    name: 'Shubhamasthu Convention Hall',
+    name: 'Aishwarya Convention Hall',
     address:
       'Aishwarya convention hall,beside dominos Pizza, forest Office near Sri Sai Colony, Revenue Colony, Subedari, Hanamkonda, Telangana 506001',
   },
