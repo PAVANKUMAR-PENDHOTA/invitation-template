@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 import Cover from './components/Cover';
 import Hero from './components/Hero';
 import CeremonyCard from './components/CeremonyCard';
@@ -141,6 +142,7 @@ export default function App() {
       </AnimatePresence>
 
       <RsvpDialog open={rsvpOpen} onClose={() => setRsvpOpen(false)} />
+      <Analytics />
     </Box>
   );
 }
