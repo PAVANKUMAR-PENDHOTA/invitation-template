@@ -8,6 +8,8 @@ export const invitation = {
 
   groomShort: 'Mr.Prashanth ',
   brideShort: 'Ms.Vyshnavi',
+  groomShort1: 'Mr.PRASHANTH',
+  brideShort1: 'Ms.VYSHNAVI',
 
   groom: {
     name: 'Uppula Prashanth',
@@ -33,7 +35,7 @@ export const invitation = {
 
   // month is 1-12
   date: { year: 2026, month: 11, day: 1 },
-  time: '09:15',
+  time: '10:30',
   partyTitle: 'Engagement Party Info',
 
   venue: {
@@ -49,7 +51,7 @@ export const invitation = {
   },
 
   schedule: [
-    { time: '10:00', text: 'Welcome', icon: 'bell' },
+    { time: '10:30', text: 'Welcome', icon: 'bell' },
     { time: '12:30', text: 'Rings exchange', icon: 'rings' },
     { time: '13:00', text: 'Main Course', icon: 'food' },
     { time: '17:00', text: 'Followed by Sangeet Event', icon: 'music' },
@@ -58,10 +60,9 @@ export const invitation = {
   // Put your real photos in /public/images/photos and list them here
   gallery: [
     '/images/photos/photo-1.jpg',
-    '/images/photos/photo-2.jpg',
+    '/images/photos/photo-2.jpeg',
     '/images/photos/photo-3.jpg',
-    '/images/photos/photo-4.jpg',
-    '/images/photos/photo-5.jpg',
+    // '/images/photos/photo-5.jpg',
     '/images/photos/photo-6.jpeg',
   ],
 

@@ -35,9 +35,19 @@ export default function Hero({ play }) {
         </Box>
       </Box>
 
-      {/* ---------- screen 2 : names in front of the vintage manor ---------- */}
-      <Box sx={{ position: 'relative', aspectRatio: '1 / 0.9', zIndex: 1, mt: '-6%' }}>
-        <Floral name="mansion" sx={{ left: '-15%', top: '-9%', width: '130%', maxWidth: 'none', opacity: 0.95 }} />
+      {/* ---------- screen 2 : names over a lavender-tinted ceremony photo ---------- */}
+      <Box
+        sx={{
+          position: 'relative',
+          aspectRatio: '1 / 0.9',
+          zIndex: 1,
+          mt: '-6%',
+          overflow: 'hidden',
+          backgroundImage: "linear-gradient(rgba(201, 187, 230, 0.3), rgba(232, 224, 246, 0.4)), url('/images/engagement-background.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 38%',
+        }}
+      >
         <Floral name="edge_right" sx={{ right: -8, top: '-16%', width: '20%', opacity: 0.95, zIndex: 3 }} />
 
         <motion.div
@@ -48,11 +58,11 @@ export default function Hero({ play }) {
           <Typography
             sx={{
               position: 'relative', zIndex: 2, pt: '9%', fontFamily: '"Bodoni Moda", "Playfair Display", serif', fontWeight: 400,
-              fontSize: { xs: 29, sm: 35 }, lineHeight: 2, letterSpacing: 1, color: '#6f65a3', textTransform: 'uppercase',
+              fontSize: { xs: 29, sm: 35 }, lineHeight: 2, letterSpacing: 1, color: '#6f65a3',
               textShadow: '0 0 8px #f6f5f8, 0 0 14px #f6f5f8',
             }}
           >
-            {inv.groomShort}<br />{inv.brideShort}
+            {inv.groomShort1}<br />{inv.brideShort1}
           </Typography>
         </motion.div>
       </Box>
