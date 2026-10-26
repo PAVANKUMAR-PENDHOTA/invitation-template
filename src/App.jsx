@@ -16,8 +16,6 @@ import useAutoScroll from './hooks/useAutoScroll';
 
 // seconds the envelope intro needs before the page starts gliding (see index.css)
 const INTRO_MS = 5000;
-const MUSIC_START = 329;
-const MUSIC_END = 383;
 
 export default function App() {
   const audioRef = useRef(null);
@@ -74,18 +72,6 @@ export default function App() {
     setTimeout(() => setPhase('open'), 1300);
   };
 
-  const handleAudioMetadata = () => {
-    const a = audioRef.current;
-    if (a && (a.currentTime < MUSIC_START || a.currentTime >= MUSIC_END)) {
-      a.currentTime = MUSIC_START;
-    }
-  };
-
-  const handleAudioTimeUpdate = () => {
-    const a = audioRef.current;
-    if (a && a.currentTime >= MUSIC_END) a.currentTime = MUSIC_START;
-  };
-
   const toggleMusic = () => {
     const a = audioRef.current;
     if (!a) return;
@@ -98,14 +84,11 @@ export default function App() {
       <audio
         ref={audioRef}
         style={{ display: 'none' }}
-        data-video-audio="true"
-        data-music-track-id="yt-e1b9ad9b-cca"
-        data-music-start={MUSIC_START}
-        data-music-end={MUSIC_END}
+        autoPlay
+        loop
+        controls={false}
         preload="metadata"
-        src="https://cdn.chungdoi.com/music/yt-e1b9ad9b-cca.mp3"
-        onLoadedMetadata={handleAudioMetadata}
-        onTimeUpdate={handleAudioTimeUpdate}
+        src="/audio/original.mp3"
       />
 
       <AnimatePresence>

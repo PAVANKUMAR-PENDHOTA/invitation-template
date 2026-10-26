@@ -59,11 +59,11 @@ export const invitation = {
 
   // Put your real photos in /public/images/photos and list them here
   gallery: [
-    '/images/photos/photo-1.jpg',
-    '/images/photos/photo-2.jpeg',
-    '/images/photos/photo-3.jpg',
-    // '/images/photos/photo-5.jpg',
-    '/images/photos/photo-6.jpeg',
+    '/images/photos/photo-1.png',
+    '/images/photos/photo-2.jpg',
+    '/images/photos/photo-3.jpeg',
+    '/images/photos/photo-4.jpeg',
+    '/images/photos/photo-5.jpeg',
   ],
 
   closing: 'Your presence would be the greatest gift we could receive!',
